@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/admin', function () {
-    return view('adminPage/admin/admin');
-});
+include_once __DIR__.'/be.php';
+//Route::get('/admin', function () {
+//    return view('be/layout');
+//});
+
